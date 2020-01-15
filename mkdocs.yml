@@ -1,0 +1,35 @@
+site_name: My Docs
+docs_dir: 'content'
+copyright: '2020 雨宫恋叶'
+theme:
+    language: 'zh'
+    name: 'material'
+    palette:
+        primary: 'purple'
+        accent: 'light green'
+plugins:
+    - search
+    - git-revision-date-localized:
+        type: iso_datetime
+markdown_extensions:
+    - toc:
+        permalink: true
+    - codehilite
+    - admonition
+    - footnotes
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.keys
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.smartsymbols
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - markdown.extensions.def_list
