@@ -14,8 +14,8 @@ Permission is granted to copy and distribute translations of this manual into an
 
 ## 进度
 
-- [ ] 1 The Z Shell Manual
-- [ ] 2 Introduction
+- [x] 1 The Z Shell Manual
+- [x] 2 Introduction
 - [ ] 3 Roadmap
 - [ ] 4 Invocation
 - [ ] 5 Files

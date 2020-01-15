@@ -14,7 +14,8 @@ plugins:
 markdown_extensions:
     - toc:
         permalink: true
-    - codehilite
+    - codehilite:
+        guess_lang: false
     - admonition
     - footnotes
     - pymdownx.betterem:

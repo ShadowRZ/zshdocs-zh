@@ -20,5 +20,5 @@ HTML 手册
     [http://zsh.sourceforge.net/Doc/](http://zsh.sourceforge.net/Doc/).  
     （HTML 版使用 _text2html_ 生成，它可从 http://www.nongnu.org/texi2html/ 获取。命令是：`texi2html –output . –ifinfo –split=chapter –node-files zsh.texi`。如有必要，升级到 1.78 版本的 text2html。）
 
-对于那些没有必要工具处理 Texinfo 的人们，预编译文档（Postscript，DVI，PDF 和 HTML 格式）可从 Zsh 归档站或其镜像获取。在文件 `zsh-doc.tar.gz` 中。（站点列表见见 %%）
+对于那些没有必要工具处理 Texinfo 的人们，预编译文档（Postscript，DVI，PDF 和 HTML 格式）可从 Zsh 归档站或其镜像获取。在文件 `zsh-doc.tar.gz` 中。（站点列表见 [-> 获取](02-introduction.md#_3)）
 {>>译注：我们呢？<<}
