@@ -1,5 +1,9 @@
-site_name: My Docs
+site_name: Zsh 中文手册
+site_author: '雨宫恋叶'
+site_url: 'https://shadowrz.github.io/zshdocs-zh/'
 docs_dir: 'content'
+repo_url: https://github.com/ShadowRZ/zshdocs-zh
+repo_name: 'ShadowRZ/zshdocs-zh'
 copyright: '2020 雨宫恋叶'
 theme:
     language: 'zh'
@@ -7,10 +11,14 @@ theme:
     palette:
         primary: 'purple'
         accent: 'light green'
+    logo:
+        icon: 'code'
 plugins:
     - search
     - git-revision-date-localized:
         type: iso_datetime
+    - minify:
+        minify_html: true
 markdown_extensions:
     - toc:
         permalink: true
@@ -33,4 +41,5 @@ markdown_extensions:
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.tilde
+    - pymdownx.escapeall
     - markdown.extensions.def_list
