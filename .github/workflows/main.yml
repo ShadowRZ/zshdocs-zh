@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       name: Checkout
-    - uses: mhausenblas/mkdocs-deploy-gh-pages@master
+    - uses: oxr463/mkdocs-deploy-gh-pages@master
       name: Deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
