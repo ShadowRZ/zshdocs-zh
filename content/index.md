@@ -17,7 +17,7 @@ Permission is granted to copy and distribute translations of this manual into an
 - [x] 1 The Z Shell Manual
 - [x] 2 Introduction
 - [x] 3 Roadmap
-- [ ] 4 Invocation
+- [x] 4 Invocation
 - [ ] 5 Files
 - [ ] 6 Shell Grammar
 - [ ] 7 Redirection
