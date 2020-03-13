@@ -18,7 +18,7 @@ Permission is granted to copy and distribute translations of this manual into an
 - [x] 2 Introduction
 - [x] 3 Roadmap
 - [x] 4 Invocation
-- [ ] 5 Files
+- [x] 5 Files
 - [ ] 6 Shell Grammar
 - [ ] 7 Redirection
 - [ ] 8 Command Execution
