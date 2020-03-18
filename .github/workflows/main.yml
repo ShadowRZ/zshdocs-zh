@@ -13,4 +13,4 @@ jobs:
     - uses: oxr463/mkdocs-deploy-gh-pages@master
       name: Deploy
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
