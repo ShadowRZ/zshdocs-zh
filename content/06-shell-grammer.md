@@ -186,3 +186,12 @@ if true {  # 不起作用！
 
 `function` word ... [ `()` ] [ term ] sublist
 :   这是函数的简短形式。
+
+
+## 保留字
+
+下列单词用作命令的第一个单词时，将被视为保留单词，除非引用起来或者使用 `disable -r` 对其进行了禁用：
+
+`do` `done` `esac` `then` `elif` `else` `fi` `for` `case` `if` `while` `function` `repeat` `time` `until` `select` `coproc` `nocorrect` `foreach` `end` `!` `[[` `{` `}` `declare` `export` `float` `integer` `local` `readonly` `typeset`
+
+此外，如果未设置 `IGNORE_BRACES` 选项或 `IGNORE_CLOSE_BRACES` 选项，则在任何位置都可以识别 `}`。
