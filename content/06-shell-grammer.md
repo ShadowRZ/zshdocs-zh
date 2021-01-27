@@ -131,3 +131,58 @@ func() { ... } 2>&1
 
 `[[` exp `]]`
 :   计算条件表达式 exp，如果为 true ，则返回零。有关 exp 的描述，请参见 %%。
+
+
+## 复杂命令的替代形式
+
+zsh 的许多复杂命令都有其他形式。这些是非标准的，即使是对经验丰富的 shell 程序员来说也可能不明显。在不应该考虑 shell 代码可移植性的任何地方都不应使用它们。
+
+仅当子列表的格式为 `{ list }` 或设置了 `SHORT_LOOPS` 选项时，以下简短版本才有效。对于 `if`、`while` 和 `until` 命令，在这两种情况下，循环的测试部分也都必须适当地定界，例如用 `[[... ...]]` 或 `(( ... ))` ，否则测试结束将不被认可。对于 `for`、`repeat`、`case` 和 `select` 命令，不需要为参数使用这种特殊形式，但是其他条件（子列表的特殊形式或使用 `SHORT_LOOPS` 选项）仍然适用。
+
+`if` list `{` list `}` [ `elif` list `{` list `}` ] ... [ `else` `{` list `}` ]
+:   if的替代形式。
+```zsh
+if [[ -o ignorebraces ]] {
+  print yes
+}
+```
+works, but
+```zsh
+if true {  # 不起作用！
+  print yes
+}
+```
+否，因为测试没有适当划分界限。
+
+`if` list sublist
+:   替代 `if` 的简短形式。列表形式的限制与以前的形式相同。
+
+`for` name ... `(` word ... `)`sublist
+:   `for` 的简短形式。
+
+`for` name ... [ `in` word ... ] term sublist
+:   其中 term 是至少一个换行符或 `;`。 `for` 的另一种简短形式。
+
+`for` `(( [expr1] ; [expr2] ; [expr3] ))` sublist
+:   命令算术的缩写。
+
+`foreach` name ... `(` word ... `)` list `end`
+:   `for` 的另一种形式。
+
+`while` list `{` list `}`
+:   `while` 的另一种形式。注意上面提到的列表形式的限制。
+
+`until` list `{` list `}`
+:   `until` 的另一种形式。注意上面提到的列表形式的限制。
+
+`repeat` word sublist
+:   这是重复的简短形式。
+
+`case` word `{ [ [(]` pattern `[ |` pattern `]` ... `)` list `(;;|;&|;|) ]` ... `}`
+:   `case` 的另一种形式。
+
+`select` name [ `in` word ... term ] sublist
+:   其中 term 是至少一个换行符或 `;`。`select` 的简短形式。
+
+`function` word ... [ `()` ] [ term ] sublist
+:   这是函数的简短形式。
