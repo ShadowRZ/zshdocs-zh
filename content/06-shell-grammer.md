@@ -90,7 +90,7 @@ term 包含一个或多个换行符或分号作为终止符，并且在省略 `i
 
 `select` name [ `in` word ... term ] `do` list `done`
 :   其中term是一个或多个换行符或 `;` 来终止。打印一组单词，每个单词后面都有一个数字。如果省略 `in`，请使用位置参数。如果 shell 是交互式（interactive）的且处于活动状态，或者是标准输入，则将打印 `PROMPT3` 提示符，并从行编辑器中读取一行。如果此行由列出的单词之一的数字组成，则将参数 name 设置为与该数字相对应的单词。如果该行为空，则再次打印选择列表。否则，参数名称的值将设置为 `null`。从标准输入读取的行的内容保存在参数 `REPLY` 中。对每个选择执行列表，直到遇到中断或文件结束。
-    where term is one or more newline or ; to terminate the words. Print the set of words, each preceded by a number. If the in word is omitted, use the positional parameters. The PROMPT3 prompt is printed and a line is read from the line editor if the shell is interactive and that is active, or else standard input. If this line consists of the number of one of the listed words, then the parameter name is set to the word corresponding to this number. If this line is empty, the selection list is printed again. Otherwise, the value of the parameter name is set to null. The contents of the line read from standard input is saved in the parameter REPLY. list is executed for each selection until a break or end-of-file is encountered.
+
 `(` list `)`
 :   在子 shell (subshell)中执行列表。内置 trap 设置的 trap 在执行列表时会重置为其默认值。
 
