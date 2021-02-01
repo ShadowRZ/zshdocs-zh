@@ -140,19 +140,19 @@ zsh 的许多复杂命令都有其他形式。这些是非标准的，即使是�
 仅当子列表的格式为 `{ list }` 或设置了 `SHORT_LOOPS` 选项时，以下简短版本才有效。对于 `if`、`while` 和 `until` 命令，在这两种情况下，循环的测试部分也都必须适当地定界，例如用 `[[... ...]]` 或 `(( ... ))` ，否则测试结束将不被认可。对于 `for`、`repeat`、`case` 和 `select` 命令，不需要为参数使用这种特殊形式，但是其他条件（子列表的特殊形式或使用 `SHORT_LOOPS` 选项）仍然适用。
 
 `if` list `{` list `}` [ `elif` list `{` list `}` ] ... [ `else` `{` list `}` ]
-:   if的替代形式。
+:   if的替代形式。上述规则意味着
 ```zsh
 if [[ -o ignorebraces ]] {
   print yes
 }
 ```
-works, but
+可以工作，但是
 ```zsh
 if true {  # 不起作用！
   print yes
 }
 ```
-否，因为测试没有适当划分界限。
+并不会，因为测试没有适当划分界限。
 
 `if` list sublist
 :   替代 `if` 的简短形式。列表形式的限制与上一个形式相同。
