@@ -14,16 +14,16 @@
 
 ## 文件列表
 
-`$ZDOTDIR/.zshenv`
-`$ZDOTDIR/.zprofile`
-`$ZDOTDIR/.zshrc`
-`$ZDOTDIR/.zlogin`
-`$ZDOTDIR/.zlogout`
-`${TMPPREFIX}*` （默认 /tmp/zsh*）
-`/etc/zshenv`
-`/etc/zprofile`
-`/etc/zshrc`
-`/etc/zlogin`
+`$ZDOTDIR/.zshenv`  
+`$ZDOTDIR/.zprofile`  
+`$ZDOTDIR/.zshrc`  
+`$ZDOTDIR/.zlogin`  
+`$ZDOTDIR/.zlogout`  
+`${TMPPREFIX}*` （默认 /tmp/zsh*）  
+`/etc/zshenv`  
+`/etc/zprofile`  
+`/etc/zshrc`  
+`/etc/zlogin`  
 `/etc/zlogout`（取决于安装 - 默认 `/etc/`）
 
 上述任何文件都可以用内置命令 `zcompile` 预编译（详见 [-> Shell 内建命令](17-builtins.md)）。若存在编译文件（以原文件名加 `.zwc` 扩展名形式命名）且比原文件新，会使用编译文件。

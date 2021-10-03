@@ -1,18 +1,31 @@
 site_name: Zsh 中文手册
-site_author: '雨宫恋叶'
+site_author: '夜坂雅'
 site_url: 'https://shadowrz.github.io/zshdocs-zh/'
 docs_dir: 'content'
 repo_url: https://github.com/ShadowRZ/zshdocs-zh
 repo_name: 'ShadowRZ/zshdocs-zh'
-copyright: '2020 雨宫恋叶'
+copyright: '2020-2021 夜坂雅及<a href="https://github.com/ShadowRZ/zshdocs-zh/graphs/contributors">其他贡献者</a>'
 theme:
     language: 'zh'
     name: 'material'
     palette:
-        primary: 'purple'
-        accent: 'light green'
-    logo:
-        icon: 'code'
+        - scheme: default
+          media: "(prefers-color-scheme: light)"
+          primary: 'deep orange'
+          accent: 'blue'
+          toggle:
+              icon: material/lightbulb-outline
+          name: 切换为暗色模式
+        - scheme: slate
+          media: "(prefers-color-scheme: dark)"
+          primary: 'deep orange'
+          accent: 'blue'
+          toggle:
+              icon: material/lightbulb
+          name: 切换为亮色模式
+    icon:
+        repo: 'fontawesome/brands/github-alt'
+        logo: 'octicons/code-24'
 plugins:
     - search
     - git-revision-date-localized:
@@ -35,6 +48,8 @@ markdown_extensions:
         emoji_index: !!python/name:pymdownx.emoji.twemoji
         emoji_generator: !!python/name:pymdownx.emoji.to_svg
     - pymdownx.keys
+    - pymdownx.highlight
+    - pymdownx.superfences
     - pymdownx.inlinehilite
     - pymdownx.magiclink
     - pymdownx.smartsymbols
