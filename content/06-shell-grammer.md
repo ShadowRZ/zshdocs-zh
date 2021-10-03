@@ -195,3 +195,35 @@ _并不会_ ，因为测试没有适当划分界限。
 `do` `done` `esac` `then` `elif` `else` `fi` `for` `case` `if` `while` `function` `repeat` `time` `until` `select` `coproc` `nocorrect` `foreach` `end` `!` `[[` `{` `}` `declare` `export` `float` `integer` `local` `readonly` `typeset`
 
 此外，如果未设置 `IGNORE_BRACES` 选项或 `IGNORE_CLOSE_BRACES` 选项，则在任何位置都可以识别 `}`。
+
+## 错误
+
+Shell 会把一些错误认定为严重错误：在交互 Shell 中，这会导致控制返回命令行，在非交互 Shell 中则会导致 Shell 终止。旧版 Zsh 里，运行脚本的非交互 Shell 此时不会完全停止运行，但会在从脚本会读取的下一个命令处继续执行，跳过任何函数的剩余部分或如循环、条件等的 Shell 成分。这个有点反逻辑的行为可以通过选项 `CONTINUE_ON_ERROR` 恢复。
+
+非交互 Shell 的严重错误包括：
+
+* 执行 Shell 时传入的 Shell 参数解析失败
+* 用 `set` 内建命令改变选项失败
+* 各种解析错误，包括解析数学表达式的失败
+* 用 `typeset`，`local`，`declare`，`export`，`integer`，`float` 设定或改变变量行为失败
+* 位于不正确位置的循环控制结构（`continue`，`break`）的执行
+* 无正则模块时尝试使用正则
+* `RESTRICTED` 选项设置时的不允许的操作
+* 管线创建时需要的 pipe 创建失败
+* Multiio 创建失败
+* 声明的 Shell 机能所需的模块自装载失败
+* 创建命令或进程替换失败
+* Glob 界定符的语法错误
+* 未被 `BAD_PATTERN` 选项捕获的文件名生成错误
+* Case 语句中用于匹配的所有错误模式
+* 不是因为 `NO_MATCH` 或类似选项导致的文件名生成失败
+* 用于创建 Multiio 的模式中的所有文件名生成错误
+* Shell 检测到的所有内存错误
+* Shell 变量不可用的下标
+* 对只读变量的赋值尝试
+* 与变量有关的逻辑错误，如赋值类型有误
+* 使用不可用的变量名
+* 变量替换语法中的错误
+* `$''` 表达式中字符转换的失败
+
+如果设定选项 `POSIX_BUILTINS`，更多与 Shell 内建命令相关的错误会被认定为严重错误，就如 POSIX 标准规定的那样。
