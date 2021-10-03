@@ -26,6 +26,8 @@ theme:
     icon:
         repo: 'fontawesome/brands/github-alt'
         logo: 'fontawesome/solid/terminal'
+    features:
+        - toc.integrate
 plugins:
     - search
     - git-revision-date-localized:
