@@ -1,16 +1,35 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-      name: Checkout
-    - uses: oxr463/mkdocs-deploy-gh-pages@master
-      name: Deploy
-      env:
-        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: | 
+          sudo apt-get update
+          sudo apt-get install python3-venv
+          python3 -m venv env
+          ./env/bin/pip install -U -r requirements.txt
+
+      - name: Check dependencies
+        run: |
+          ./env/bin/mkdocs --version
+
+      - name: Build
+        run: |
+          ./env/bin/mkdocs build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
