@@ -25,7 +25,7 @@ theme:
           name: 切换为亮色模式
     icon:
         repo: 'fontawesome/brands/github-alt'
-        logo: 'octicons/code-24'
+        logo: 'fontawesome/solid/terminal'
 plugins:
     - search
     - git-revision-date-localized:
@@ -45,8 +45,8 @@ markdown_extensions:
     - pymdownx.critic
     - pymdownx.details
     - pymdownx.emoji:
-        emoji_index: !!python/name:pymdownx.emoji.twemoji
-        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
     - pymdownx.keys
     - pymdownx.highlight
     - pymdownx.superfences
