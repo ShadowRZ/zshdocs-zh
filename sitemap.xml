@@ -2,142 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/00-translator-notes/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/01-manual-description/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/02-introduction/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/03-roadmap/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/04-invocation/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/05-files/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/06-shell-grammer/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/07-redirection/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/08-command-execution/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/09-functions/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/10-jobs-and-signals/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/11-atithmetics/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/12-conditionals/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/13-prompt-expns/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/14-expansions/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/15-parameters/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/16-options/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/17-builtins/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/18-zle-line-editor/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/19-completion-widgets/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/20-completion-system/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/21-compctl-completions/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/22-zsh-modules/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/23-zcal-calendar/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/24-ztcp-tcpsocket/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/25-zftp-ftpclient/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://shadowrz.github.io/zshdocs-zh/26-user-contrib/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2022-07-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
