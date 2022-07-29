@@ -20,7 +20,7 @@ Permission is granted to copy and distribute translations of this manual into an
 - [x] 4 Invocation
 - [x] 5 Files
 - [x] 6 Shell Grammar
-- [ ] 7 Redirection
+- [x] 7 Redirection
 - [ ] 8 Command Execution
 - [ ] 9 Functions
 - [ ] 10 Jobs & Signals
